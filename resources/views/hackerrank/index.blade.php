@@ -3,7 +3,7 @@
 @section('content') 
     <?php //phpinfo()?> 
       {{Form::open(['action'=>'ChallengeController@api','method'=>'post'])}}
-        <h1>Hackerrank's Cube Summation Challenge</h1>
+        <h1>Juan Scarton's Cube Summation Challenge</h1>
         <fieldset>
           <legend><span class="number">1</span>Enter your input content here</legend>
           <label for="input">Input:</label>
