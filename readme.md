@@ -46,7 +46,7 @@ Todas estas capas yacen sobre Laravel 5.5 y PHP 7.
 # Code Refactoring task
 
 Mi versión del codigo refactorizado seria la siguiente:
-
+```php
 //Inicio del codigo
 /**
 *	post_confirm: este metodo es realmente sorprendente!!!
@@ -85,7 +85,7 @@ public function post_confirm($service_id, $driver_id)
  		return Response::json(['error'=>3]);
 }
 //final del código
-
+```
 # Malas prácticas evidenciadas en el Codigo:
 * No hay descripción de que hace el método ni que significan sus parámetros.
 * No valida si los parametrós service_id y driver_id estan presentes antes de intentar ejecutar el código.
