@@ -1,6 +1,6 @@
 <?php
 namespace App;
-class NewCube
+class Cube
 {
     private $_n, $cube;
     function __construct($n)

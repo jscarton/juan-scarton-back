@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\NewCube;
+use App\Cube;
 use App\Exceptions;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
@@ -38,7 +38,7 @@ class ChallengeController extends Controller
                     //reads the next line to get the N and M values
                     list($N,$M)=explode(" ",trim($input_lines[$j++]));
                     //init cube object
-                    $testCube=new NewCube(intval($N),intval($M));
+                    $testCube=new Cube(intval($N));
                     //now exec the test cases
                     for ($k=0; $k<intval($M);$k++){
                         $order_data=explode(" ",$input_lines[$j++]);
