@@ -134,5 +134,5 @@ Entre muchas que podria enunciar:
 * Realiza las validaciones necesarias y el manejo de errores necesario.
 * Es susceptible de ser testeado por cualquiera de los métodos de testing habituales.
 * En caso de aplicaciones usando el paradigma MVC, el codigo limpio mantiene la separación de capas de manera que un desarrollador que tenga que mantener ese codigo puede ubicar cada parte de la aplicación facilmente.
-* Clases y metodos deben contener nombres que no dejen lugagr a dudas a su proposito.
+* Clases y metodos deben contener nombres que no dejen lugar a dudas a su proposito.
 * Los comentarios dentro del código son cortos y precisos a la hora de transmitir información acerca del código al que están relacionados y estan ubicados de manera que no compliquen la lectura del mismo.
