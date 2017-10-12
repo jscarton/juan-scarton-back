@@ -5,17 +5,20 @@ namespace Tests\Feature;
 use Tests\TestCase;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 
-class ExampleTest extends TestCase
+/**
+*   IndexTest
+    @description: este test prueba que cargue correctamente el UI del App
+*/
+class IndexTest extends TestCase
 {
     /**
-     * A basic test example.
+     * loads the index.
      *
      * @return void
      */
-    public function testBasicTest()
+    public function testLoadTest()
     {
         $response = $this->get('/');
-
         $response->assertStatus(200);
     }
 }
