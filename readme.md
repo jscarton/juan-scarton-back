@@ -1,4 +1,4 @@
-# Juan Scarton' Senior Backend Developer Challange for Rappi 
+# Task 1: Juan Scarton' Senior Backend Developer Challange for Rappi 
 
 ## Instalación
 
@@ -50,7 +50,11 @@ interfaces provistas por Laravel.
 
 Para ejecutarlo se debe tener instalado PHPUnit y ejecutar el comando phpunit.
 
-# Code Refactoring task
+
+
+
+
+# Task 2: Code Refactoring task
 
 Mi versión del codigo refactorizado seria la siguiente:
 ```php
@@ -109,7 +113,12 @@ public function post_confirm($service_id, $driver_id)
 * Con una descripción mas detallada de lo que hace el metodo creo se podria saber si en lugar de [‘error’=>0] se debería retornar el valor de $result.
 
 
-# Q&A (Preguntas y Respuestas)
+
+
+
+
+
+# Task 3: Q&A (Preguntas y Respuestas)
 
 ## 1.- ¿En qué consiste el principio de responsabilidad única? ¿Cuál es su propósito?
 
