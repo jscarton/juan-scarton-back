@@ -86,13 +86,13 @@ public function post_confirm($service_id, $driver_id)
 }
 //final del código
 ```
-# Malas prácticas evidenciadas en el Codigo:
+## Malas prácticas evidenciadas en el Codigo:
 * No hay descripción de que hace el método ni que significan sus parámetros.
 * No valida si los parametrós service_id y driver_id estan presentes antes de intentar ejecutar el código.
 * Código comentado en medio de llamadas a funciones. Usando un controlador de versiones como GIT se puede eliminar el código antiguo con confianza de poder volver a él si es necesario ya que queda en el historial del archivo.
 * Código de retorno redundante en las notificaciones. Si el uuid del user es vacío simplemente no debería ejecutar las notificaciones y seguir a la línea donde retorna error=0.
 
-### Mi refactorizacion agrega lo siguiente:
+## Mi refactorizacion agrega lo siguiente:
 * Descripción del metodo y parametros que recibe.
 * Utiliza el framework para poder permitir inyectar los parametros en el método. Adicionalmente el framework comprobará que estos parametros esten presentes antes de intentar ejecutar el método.
 * Elimina codigo comentado para evitar confundir a otros colegas desarrolladores.
@@ -102,13 +102,21 @@ public function post_confirm($service_id, $driver_id)
 * Con una descripción mas detallada de lo que hace el metodo creo se podria saber si en lugar de [‘error’=>0] se debería retornar el valor de $result.
 
 
-## Preguntas y Respuestas
+# Q&A (Preguntas y Respuestas)
 
-1. ¿En qué consiste el principio de responsabilidad única? ¿Cuál es su propósito?
+## 1.- ¿En qué consiste el principio de responsabilidad única? ¿Cuál es su propósito?
 
 El principio de responsabilidad, es un concepto de OOP que básicamente define que cada clase dentro de la aplicación debe tener un solo propósito o razón de ser. Su proposito principal es hacer que el código sea de facil mantenimiento pues al tener varias acciones no relacionadas entre sí dentro de una clase estamos en presencia de multiples propositos y en caso de que uno de esos propósitos cambie podríamos vernos en la necesidad de modificar no solo una clase sino todas las clases que dependan de esa clase principal.
 
 Separando las clases en unidades con un unico propósito nos aseguramos que el código sea mantenible en el tiempo y que los costos de mantenimiento de ese código estén controlados.
 
-2. ¿Qué características tiene según tu opinión “buen” código o código limpio?
+## 2.- ¿Qué características tiene según tu opinión “buen” código o código limpio?
 
+Entre muchas que podria enunciar:
+* Contiene comentarios y descripciones que dejan claro el objetivo de cada fragmento de código.
+* No contiene código fuente comentado.
+* Realiza las validaciones necesarias y el manejo de errores necesario.
+* Es susceptible de ser testeado por cualquiera de los métodos de testing habituales.
+* En caso de aplicaciones usando el paradigma MVC, el codigo limpio mantiene la separación de capas de manera que un desarrollador que tenga que mantener ese codigo puede ubicar cada parte de la aplicación facilmente.
+* Clases y metodos deben contener nombres que no dejen lugagr a dudas a su proposito.
+* Los comentarios dentro del código son cortos y precisos a la hora de transmitir información acerca del código al que están relacionados y estan ubicados de manera que no compliquen la lectura del mismo.
