@@ -43,6 +43,13 @@ Adicionalmente la acción “/api” utiliza la clase JsonResponse de Laravel pa
 
 Todas estas capas yacen sobre Laravel 5.5 y PHP 7.
 
+## Testing
+
+En el directorio test/ se incluyen algunos casos de prueba sencillos usando phpunit y las
+interfaces provistas por Laravel.
+
+Para ejecutarlo se debe tener instalado PHPUnit y ejecutar el comando phpunit.
+
 # Code Refactoring task
 
 Mi versión del codigo refactorizado seria la siguiente:
