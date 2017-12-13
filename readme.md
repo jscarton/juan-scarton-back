@@ -1,4 +1,4 @@
-# Task 1: Juan Scarton' Senior Backend Developer Challange for Rappi 
+# Task 1: Juan Scarton' Senior Backend Developer Challange 
 
 ## Instalación
 
